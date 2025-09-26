@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    padding: 22px;
+}
+
+.box {
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button {
+    margin: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:active {
+    font-weight: bold;
+}

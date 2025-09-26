@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+.main {
+    border: 2px;
+    border-color: black;
+    border-radius: 5px;
+    border-style: none;
+    background-color: beige;
+    margin: 50px;
+    padding: 50px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.output {
+    border: 2px;
+    border-color: black;
+    border-style: none;
+    border-radius: 5px;
+    background-color: burlywood;
+    margin: 25px;
+    padding: 15px;
+    font-size: large;
+}
+
+.first, .second, .third, .fourth, .fifth {
+    background-color: antiquewhite;
+    margin: 5px;
+    padding: 4px;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;;
+    cursor: pointer;
+}
+
+.result {
+    border: 2px;
+    border-color: black;
+    border-style: none;
+    border-radius: 5px;
+    background-color: azure;
+    margin: 25px;
+    padding: 20px;
+}
