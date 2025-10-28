@@ -35,6 +35,8 @@ let audio2 = new Audio('alarm-clock-90867.mp3');
 start.addEventListener('click', () => {
 
     if (count != 0) {
+        audio1.loop = true;
+        audio1.currentTime = 0;
         audio1.play()
     }
 
@@ -49,8 +51,18 @@ start.addEventListener('click', () => {
 
         if (i === 0) {
             clearInterval(timer);
+
+            audio1.pause();
+            audio1.currentTime = 0;
+            audio1.loop = false;
+
             div.innerText = 'Timeout';
-            audio2.play();
+
+            setTimeout(() => {
+                audio2.currentTime = 0;
+                audio2.play();
+                // audio2.loop = true;
+            }, (i + 1) * 100);
         }
 
         i--;
@@ -58,6 +70,8 @@ start.addEventListener('click', () => {
 })
 
 reset.addEventListener('click', () => {
+    audio1.pause();
+    audio2.pause();
     count = 0;
     counter.textContent = count;
     div.innerText = "";
