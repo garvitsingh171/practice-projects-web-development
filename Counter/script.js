@@ -27,14 +27,8 @@ decrement.addEventListener('click', () => {
     updateCounter()
 })
 
-reset.addEventListener('click', () => {
-    count = 0;
-    counter.textContent = count;
-    updateCounter()
-})
-
 let div = document.createElement('div');
-// document.body.appendChild(div);
+
 let audio1 = new Audio('timer-sound-426781.mp3');
 let audio2 = new Audio('alarm-clock-90867.mp3');
 
@@ -61,4 +55,11 @@ start.addEventListener('click', () => {
         
         i--;
     }, 1000);
+})
+
+reset.addEventListener('click', () => {
+    count = 0;
+    counter.textContent = count;
+    div.innerText = "";
+    updateCounter()
 })

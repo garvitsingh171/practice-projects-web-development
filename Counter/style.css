@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.counter {
+    border: 10px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: aqua;
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+    font-size: 60px;
+}
+
+.button {
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    margin: 50px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 5px;
+}
+
+.decrement, .increment, .reset, .start {
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.decrement:active {
+    background-color: aqua;
+    transform: translate3d(3px, 3px, 3px);
+}
+
+.increment:active {
+    background-color: aqua;
+    transform: translate3d(3px, 3px, 3px);
+}
+
+.reset:active {
+    background-color: aqua;
+    transform: translate3d(3px, 3px, 3px);
+}
+
+.start:active {
+    background-color: aqua;
+    transform: translate3d(3px, 3px, 3px);
+}
