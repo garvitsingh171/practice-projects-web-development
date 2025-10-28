@@ -46,13 +46,13 @@ start.addEventListener('click', () => {
     }
     let timer = setInterval(() => {
         counter.textContent = i;
-        
+
         if (i === 0) {
             clearInterval(timer);
             div.innerText = 'Timeout';
-            audio2.play(); 
+            audio2.play();
         }
-        
+
         i--;
     }, 1000);
 })

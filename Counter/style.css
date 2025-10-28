@@ -27,7 +27,10 @@
     border-radius: 5px;
 }
 
-.decrement, .increment, .reset, .start {
+.decrement,
+.increment,
+.reset,
+.start {
     margin-left: 200px;
     margin-right: 200px;
     background-color: aquamarine;
